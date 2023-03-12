@@ -23,8 +23,16 @@
         <code>listener.js</code> lui ecoute window sur le nom (type) de
         l'évenement choisi (kernel dans cet exemple)
       </p>
-      <h2>Déclencher le CustomEvent</h2>
-      <button id="trigger">Lancer un DispatchEvent</button>
+
+      <hr />
+
+      <div class="cta">
+        <h2>Déclencher le CustomEvent</h2>
+        <button id="trigger">Lancer un DispatchEvent</button>
+      </div>
+
+      <hr />
+
       <h2>Le code</h2>
       <h3>Listener</h3>
       <pre>
@@ -38,6 +46,9 @@ window.addEventListener("change-theme", ((event: CustomEvent) => {
   // Do Something
 }) as EventListener);</pre
       >
+
+      <hr />
+
       <h3>Dispatcher (trigger)</h3>
       <p>
         La différence entre Event et CustomEvent c'est le fait que tu peux
