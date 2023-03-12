@@ -8,6 +8,8 @@ window. `trigger.js` envoie un Event avec un `DispatchEvent`.
 `listener.js` quand à lui ecoute window sur le nom (type) de
 l'évenement choisi (kernel dans l'exemple)
 
+[Démonstration live](https://nicolaswendling.github.io/poc-custom-event/)
+
 ## Le code
 
 ### Listener
