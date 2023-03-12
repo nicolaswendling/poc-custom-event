@@ -32,6 +32,12 @@ window.addEventListener("kernel", (event) => {
   // Do Something
 })</pre
       >
+      <h4>Type Assertion en TypeScript</h4>
+      <pre>
+window.addEventListener("change-theme", ((event: CustomEvent) => {
+  // Do Something
+}) as EventListener);</pre
+      >
       <h3>Dispatcher (trigger)</h3>
       <p>
         La différence entre Event et CustomEvent c'est le fait que tu peux
@@ -51,13 +57,6 @@ trigger.addEventListener("click", () => {
     new CustomEvent("kernel", {detail: {message: "Hello World"}})
   )
 })</pre
-      >
-
-      <h4>Type Assertion en TypeScript</h4>
-      <pre>
-window.addEventListener("change-theme", ((event: CustomEvent) => {
-  // Do Something
-}) as EventListener);</pre
       >
     </div>
     <script src="assets/js/listener.js"></script>
