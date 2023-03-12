@@ -13,22 +13,24 @@ h4 {
   font-family: sans-serif;
 }
 code {
-  background-color: #cccc0082;
-  padding: 0.1em;
+  background-color: #ffff007d;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+}
+pre {
+  padding: 1em;
+  background-color: #f6f6f6;
+  border-radius: 0.4em;
 }
 button {
   cursor: pointer;
   background-color: #fff;
   border: 0.1em solid #000;
-  border-radius: 0.5em;
+  border-radius: 0.4em;
   font-size: 1em;
   padding: 0.5em 1em;
 }
 button:hover {
   background-color: #000;
   color: #fff;
-}
-pre {
-  padding: 1em;
-  background-color: #eee;
 }
