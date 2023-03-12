@@ -29,8 +29,8 @@
       <pre>
 window.addEventListener("kernel", (event) => {
   // Do Something
-})
-      </pre>
+})</pre
+      >
       <h3>Dispatcher (trigger)</h3>
       <p>
         La différence entre Event et CustomEvent c'est seulement le fait que tu
@@ -40,16 +40,16 @@ window.addEventListener("kernel", (event) => {
       <pre>
 trigger.addEventListener("click", () => {
   window.dispatchEvent(new Event("kernel"))
-})
-      </pre>
+})</pre
+      >
       <h4>CustomEvent</h4>
       <pre>
 trigger.addEventListener("click", () => {
   window.dispatchEvent(
     new CustomEvent("kernel", {detail: {message: "Hello World"}})
   )
-})
-      </pre>
+})</pre
+      >
     </div>
     <script src="assets/js/listener.js"></script>
     <script src="assets/js/trigger.js"></script>
