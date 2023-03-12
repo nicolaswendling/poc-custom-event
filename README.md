@@ -48,5 +48,5 @@ trigger.addEventListener("click", () => {
 ```typescript
 window.addEventListener("change-theme", ((event: CustomEvent) => {
   // Do Something
-}) as EventListener);</pre
+}) as EventListener)
 ```
