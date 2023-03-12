@@ -3,6 +3,14 @@ body {
   line-height: 1.75em;
   max-width: 40em;
   margin: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: sans-serif;
 }
 code {
   background-color: #cccc0082;
