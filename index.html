@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Events</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Custom Events</h1>
+      <p>Ça se passe dans la console. Ouvrir la console.</p>
+      <p>
+        Il y a deux fichier distinct qui ne possède aucun liens ensemble
+        <code>listener.js</code> et <code>trigger.js</code>.
+      </p>
+      <p>
+        Je les fais communiquer ensemble via un <code>CustomEvent</code> par
+        window. <code>trigger.js</code> envoie un Event (DispatchEvent).
+      </p>
+      <p>
+        <code>listener.js</code> quand à lui ecoute window sur le nom (type) de
+        l'évenement choisi (kernel dans l'exemple)
+      </p>
+      <h2>Déclencher le CustomEvent</h2>
+      <button id="trigger">Je suis un trigger</button>
+      <h2>Le code</h2>
+      <h3>Listener</h3>
+      <pre>
+window.addEventListener("kernel", (event) => {
+  // Do Something
+})
+      </pre>
+      <h3>Dispatcher (trigger)</h3>
+      <p>
+        La différence entre Event et CustomEvent c'est seulement le fait que tu
+        peux utiliser <code>{detail:{}}</code> pour passer de la data.
+      </p>
+      <h4>Event (classic)</h4>
+      <pre>
+trigger.addEventListener("click", () => {
+  window.dispatchEvent(new Event("kernel"))
+})
+      </pre>
+      <h4>CustomEvent</h4>
+      <pre>
+trigger.addEventListener("click", () => {
+  window.dispatchEvent(
+    new CustomEvent("kernel", {detail: {message: "Hello World"}})
+  )
+})
+      </pre>
+    </div>
+    <script src="/assets/js/listener.js"></script>
+    <script src="/assets/js/trigger.js"></script>
+  </body>
+</html>

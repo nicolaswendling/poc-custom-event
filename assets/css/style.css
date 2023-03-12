@@ -1,0 +1,26 @@
+body {
+  font-size: 1.5em;
+  line-height: 1.75em;
+  max-width: 40em;
+  margin: auto;
+}
+code {
+  background-color: #cccc0082;
+  padding: 0.1em;
+}
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border: 0.1em solid #000;
+  border-radius: 0.5em;
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+pre {
+  padding: 1em;
+  background-color: #eee;
+}
