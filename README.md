@@ -42,3 +42,11 @@ trigger.addEventListener("click", () => {
   )
 })
 ```
+
+#### Type Assertion en TypeScript
+
+```typescript
+window.addEventListener("change-theme", ((event: CustomEvent) => {
+  // Do Something
+}) as EventListener);</pre
+```
